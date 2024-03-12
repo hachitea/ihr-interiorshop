@@ -1,0 +1,303 @@
+/*--------------------------------
+  メインビジュアル
+---------------------------------*/
+.mv {
+  display: flex;
+  align-items: center;
+}
+
+.mv img {
+  margin: 0 auto;
+}
+
+/*--------------------------------
+  トップページ
+---------------------------------*/
+
+/* about */
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  column-gap: 5%;
+}
+
+.about-content {
+  line-height: 3;
+  letter-spacing: .3rem;
+}
+
+.about-wrapper-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15%;
+  column-gap: 5%;
+}
+
+@media screen and (min-width:960px) {
+  .about-content.txt-right {
+    text-align: right;
+  }
+}
+
+.about-servise {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.about-servise figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-servise-circle {
+  position: relative;
+}
+
+.about-servise-circle::after {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%);
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 62% 38% 63% 37% / 40% 60% 40% 60%;
+  background-color: #FFCE83;
+  /* 回転アニメーション設定 */
+  animation: rotate-anime 25s linear infinite;
+  z-index: -1;
+}
+
+.about-servise-circle img {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes rotate-anime {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-servise h3 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.about-servise p {
+  line-height: 1.8;
+}
+
+/* works */
+
+.works-list {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background-color: #FFCE83;
+}
+
+.works-list-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+}
+
+.works-list-wrapper div {
+  width: 50%;
+  line-height: 2;
+}
+
+.works-item .works-title {
+  font-size: 2.4rem;
+}
+
+.works-item .works-txt {
+  font-size: 1.6rem;
+}
+
+.works-btn {
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  background-color: #fff;
+  border: 1.5px solid #333;
+  border-radius: 100vh;
+  transition: 0.5s;
+  margin: 30% 0 0 60%;
+}
+
+.works-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* profile */
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.profile-txt p {
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.profile-txt li {
+  line-height: 1.8;
+  letter-spacing: .1rem;
+}
+
+/* skill */
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.skill-list+.skill-list {
+  margin-top: 3%;
+}
+
+/* contact */
+
+.contact-txt {
+  line-height: 1.8;
+  letter-spacing: .1rem;
+}
+
+.contact-btn {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  border: 1.5px solid #FFCE83;
+  background-color: #FFCE83;
+  color: #333;
+  padding: 1rem 4rem;
+  margin-top: 5%;
+  border-radius: 100vh;
+  transition: 0.5s;
+  animation: move_a 2s infinite;
+}
+
+@keyframes move_a {
+  0% {
+    transform: translate(0px, 4px);
+  }
+
+  5% {
+    transform: translate(0px, -4px);
+  }
+
+  10% {
+    transform: translate(0px, 4px);
+  }
+
+  15% {
+    transform: translate(0px, -4px);
+  }
+
+  20% {
+    transform: translate(0px, 4px);
+  }
+
+  25% {
+    transform: translate(0px, -4px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.contact-btn:hover {
+  color: #FFCE83;
+  background-color: #fff;
+}
+
+.contact-btn.btn-center {
+  display: block;
+  margin: 10% auto 15% auto;
+}
+
+/*--------------------------------
+  sp style
+---------------------------------*/
+@media screen and (max-width: 767px) {
+
+  .gnav {
+    display: none;
+  }
+
+  .container {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  .container h2 {
+    margin-left: 3%;
+  }
+
+  /* about */
+  .about-wrapper,
+  .about-wrapper-reverse {
+    display: block;
+  }
+
+  .about-servise {
+    display: block;
+  }
+
+  /* works */
+  .works-list-wrapper {
+    display: block;
+  }
+
+  /* profile */
+  .profile-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-txt {
+    text-align: left;
+  }
+}
+
+/*--------------------------------
+  下層ページ
+---------------------------------*/
+
+.feature-txt dt {
+  font-weight: bold;
+}
+
+/* sp style */
+@media screen and (max-width: 767px) {}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>ihr ポートフォリオ</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/common.css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header-wrapper">
+      <!-- logo -->
+      <h1 class="header-logo">
+        <a href="#">ihr</a>
+      </h1>
+      <!-- pc nav -->
+      <nav class="gnav">
+        <ul class="gnav-list">
+          <li class="gnav-item"><a href="#about">about</a></li>
+          <li class="gnav-item"><a href="#works">works</a></li>
+          <li class="gnav-item"><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <!-- sp nav -->
+      <nav class="gnav-sp">
+        <!-- sp menu btn -->
+        <div class="hmb-btn" alt="ナビゲーションを開く" onclick="document.getElementById('gnav-sp').style.display = 'block';">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="gnav-sp-list">
+          <li class="gnav-sp-item"><a href="#about"
+              onclick="document.getElementById('gnav-sp').style.display = 'none'">about</a></li>
+          <li class="gnav-sp-item"><a href="#works"
+              onclick="document.getElementById('gnav-sp').style.display = 'none'">works</a></li>
+          <li class="gnav-sp-item"><a href="#contact"
+              onclick="document.getElementById('gnav-sp').style.display = 'none'">contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <!-- /header -->
+
+  <main class="main">
+
+    <!-- mv -->
+    <div class="container">
+      <img src="img/main.png" alt="メインビジュアル">
+    </div>
+    <!-- /mv -->
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <h2 id="about" class="common-title">about</h2>
+        <div class="about-wrapper">
+          <div class="about-content">
+            <p>
+              あなた&nbsp;と&nbsp;わたし<br>
+              ともに新たな<br>
+              ”つながり”を生み出す<br>
+              モノづくり
+            </p>
+          </div>
+          <div class="about-img">
+            <img src="img/about1.png" alt="" />
+          </div>
+        </div>
+        <div class="about-wrapper-reverse">
+          <div class="about-content txt-right">
+            <p>
+              デザインの力で<br>
+              より多くのユーザーへ<br>
+              その魅力を届けます
+            </p>
+          </div>
+          <div class="about-img">
+            <img src="img/about2.png" alt="" />
+          </div>
+        </div>
+        <div class="about-servise">
+          <figure>
+            <div class="about-servise-circle">
+              <img src="img/hearing.png" alt="ヒアリングの実施">
+            </div>
+            <!-- after要素で回る円が来る -->
+            <figcaption>
+              <h3>ヒアリングの実施</h3>
+              <p>まずはサイトの土台作りのためにお話をお聞かせください。ユーザーの立場も踏まえ、必要な要素を洗い出しご提案します。</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="about-servise-circle">
+              <img src="img/design.png" alt="ウェブサイト設計">
+            </div>
+            <figcaption>
+              <h3>ウェブサイト設計</h3>
+              <p>ヒアリングで得た情報をもとにサイト案を作成し、本制作へと進みます。納品後も管理がしやすい、サイト制作を心掛けています。</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="about-servise-circle">
+              <img src="img/delivery.png" alt="制作物の修正・納品">
+            </div>
+            <figcaption>
+              <h3>制作物の修正・納品</h3>
+              <p>成果物をご確認いただき、修正箇所を改め、ご納得いただいた上で納品いたします。納品後もサイト運営をサポートします。</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- /about -->
+
+    <!-- works -->
+    <section class="works">
+      <div class="container">
+        <h2 id="works" class="common-title">works</h2>
+        <div class="works-list">
+          <div class="works-list-wrapper">
+            <div><img src="img/cafebanner.png" alt="架空カフェバナー" /></div>
+            <div class="works-item">
+              <h3 class="works-title">架空カフェバナー</h3>
+              <p class="works-txt">グラフィックデザイン</p>
+              <button class="works-btn" onclick="location.href='works.html'">more</button>
+            </div>
+          </div>
+        </div>
+        <div class="works-list">
+          <div class="works-list-wrapper">
+            <div><img src="img/bridalbanner.png" alt="架空カフェバナー" /></div>
+            <div class="works-item">
+              <h3 class="works-title">架空ブライダルバナー</h3>
+              <p class="works-txt">グラフィックデザイン</p>
+              <button class="works-btn" onclick="">more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /works -->
+
+    <!-- profile -->
+    <section class="profile">
+      <div class="container">
+        <h2 id="profile" class="common-title">profile</h2>
+        <div class="profile-wrapper">
+          <img src="img/profile.png" alt="プロフィール写真">
+          <div class="profile-txt">
+            <p>サコタ&nbsp;ハルカ&nbsp;|&nbsp;web&nbsp;designer</p>
+            <ul>
+              <li>デザイン専門学校卒業後、インテリアショップに約10年勤務。</li>
+              <li>30歳を迎え働き方を見直し、好きなデザインを仕事に日本各地を旅する、</li>
+              <li>Webデザイナーを志す。趣味は暮らしを整えること。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /profile -->
+
+    <!-- skill -->
+    <section class="skill">
+      <div class="container">
+        <h2 id="skill" class="common-title">skill</h2>
+        <div class="skill-list">
+          <div class="skill-item">
+            <img src="img/html.png" alt="html">
+          </div>
+          <div class="skill-item">
+            <img src="img/css.png" alt="css">
+          </div>
+          <div class="skill-item">
+            <img src="img/js.png" alt="javascript">
+          </div>
+          <div class="skill-item">
+            <img src="img/jquery.png" alt="jquery">
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <img src="img/figma.png" alt="figma">
+          </div>
+          <div class="skill-item">
+            <img src="img/wordpress.png" alt="wordpress">
+          </div>
+          <div class="skill-item">
+            <img src="img/photoshop.png" alt="photoshop">
+          </div>
+          <div class="skill-item">
+            <img src="img/illustrator.png" alt="illustrator">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /skill -->
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="container">
+        <h2 id="contact" class="common-title">contact</h2>
+        <p class="contact-txt">
+          最後までご覧いただきまして、ありがとうございます。<br>
+          お仕事のご依頼やご相談は下記DMにてお気軽にご連絡ください。<br>
+          当サイトのご感想などもお寄せくださいますと今後の制作活動の励みになります。
+        </p>
+        <button class="contact-btn btn-center" onclick="">contact&nbsp;me</button>
+      </div>
+    </section>
+  </main>
+  <!-- /contact -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <nav class="footer-gnav">
+      <ul class="footer-gnav-list">
+        <li class="footer-gnav-item"><a href="#about">about</a></li>
+        <li class="footer-gnav-item"><a href="#works">works</a></li>
+        <li class="footer-gnav-item"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <address><small class="copyright">&copy;2024 SAKOTA HARUKA</small></address>
+  </footer>
+  <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+
+</html>
