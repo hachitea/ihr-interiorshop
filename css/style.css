@@ -62,12 +62,12 @@
 
 .about-servise-circle::after {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: -50%;
+  left: -50%;
   transform: translate(-40%);
   content: '';
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 62% 38% 63% 37% / 40% 60% 40% 60%;
   background-color: #FFCE83;
   /* 回転アニメーション設定 */
