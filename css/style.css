@@ -38,16 +38,17 @@
   column-gap: 5%;
 }
 
-@media screen and (min-width:960px) {
-  .about-content.txt-right {
-    text-align: right;
-  }
+
+.about-content.txt-right {
+  text-align: right;
 }
+
 
 .about-servise {
   display: flex;
   justify-content: space-around;
   gap: 3rem;
+  padding: 2%;
 }
 
 .about-servise figure {
@@ -64,7 +65,7 @@
   position: absolute;
   top: -50%;
   left: -50%;
-  transform: translate(-40%);
+  transform: translate(50%);
   content: '';
   width: 180px;
   height: 180px;
@@ -102,6 +103,19 @@
 
 .about-servise p {
   line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* about */
+  .about-wrapper,
+  .about-wrapper-reverse {
+    display: block;
+  }
+
+  .about-servise {
+    display: block;
+  }
 }
 
 /* works */
@@ -153,6 +167,12 @@
   background-color: #333;
 }
 
+@media screen and (max-width: 768px) {
+  .works-list-wrapper {
+    display: block;
+  }
+}
+
 /* profile */
 
 .profile-wrapper {
@@ -173,6 +193,17 @@
   letter-spacing: .1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .profile-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-txt {
+    text-align: left;
+  }
+}
+
 /* skill */
 
 .skill-list {
@@ -186,6 +217,10 @@
 }
 
 /* contact */
+.contact-box {
+  width: 50%;
+  margin: 0 auto;
+}
 
 .contact-txt {
   line-height: 1.8;
@@ -246,58 +281,3 @@
   display: block;
   margin: 10% auto 15% auto;
 }
-
-/*--------------------------------
-  sp style
----------------------------------*/
-@media screen and (max-width: 767px) {
-
-  .gnav {
-    display: none;
-  }
-
-  .container {
-    min-width: 375px;
-    margin: 0;
-  }
-
-  .container h2 {
-    margin-left: 3%;
-  }
-
-  /* about */
-  .about-wrapper,
-  .about-wrapper-reverse {
-    display: block;
-  }
-
-  .about-servise {
-    display: block;
-  }
-
-  /* works */
-  .works-list-wrapper {
-    display: block;
-  }
-
-  /* profile */
-  .profile-wrapper {
-    display: block;
-    text-align: center;
-  }
-
-  .profile-txt {
-    text-align: left;
-  }
-}
-
-/*--------------------------------
-  下層ページ
----------------------------------*/
-
-.feature-txt dt {
-  font-weight: bold;
-}
-
-/* sp style */
-@media screen and (max-width: 767px) {}

@@ -31,6 +31,13 @@ ul>li {
   list-style: none;
 }
 
+@media screen and (max-width: 960px) {
+  section {
+    min-width: 100%;
+    padding: 2%;
+  }
+}
+
 /*--------------------------------
   共通クラス
 ---------------------------------*/
@@ -57,24 +64,55 @@ ul>li {
   letter-spacing: .3rem;
 }
 
+@media screen and (max-width: 960px) {
+  .container {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .common-title {
+    margin-left: 3%;
+  }
+}
+
 /*--------------------------------
 ヘッダー
 ---------------------------------*/
-@media screen and (min-width: 768px) {
+.header {
+  width: 100%;
+}
 
-  .gnav-sp {
-    display: none;
-  }
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.gnav {
+  display: none;
+}
+
+.gnav-list {
+  display: none;
+}
+
+.gnav-sp {
+  display: block;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 961px) {
   .header {
-    width: 100%;
     padding: 0 1%;
   }
 
-  .header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .gnav {
+    display: block;
   }
 
   .gnav-list {
@@ -82,6 +120,14 @@ ul>li {
     position: relative;
     cursor: pointer;
     gap: 2rem;
+  }
+
+  .gnav-item {
+    font-family: "Monserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: .03rem;
+    text-transform: uppercase;
   }
 
   .gnav-list a {
@@ -110,19 +156,15 @@ ul>li {
     transform-origin: bottom left
   }
 
-  .gnav-item {
-    font-family: "Monserrat", sans-serif;
-    font-size: 2.4rem;
-    font-weight: bold;
-    letter-spacing: .03rem;
-    text-transform: uppercase;
+  .gnav-sp {
+    display: none;
   }
 }
 
 /*--------------------------------
 ハンバーガーボタン
 ---------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .gnav-sp {
     float: right;
     padding: 0;
