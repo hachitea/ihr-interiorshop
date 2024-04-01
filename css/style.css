@@ -55,6 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .about-servise-circle {
@@ -107,14 +108,24 @@
 
 @media screen and (max-width: 768px) {
 
-  /* about */
   .about-wrapper,
   .about-wrapper-reverse {
     display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-wrapper-reverse {
+    margin-bottom: 30%;
   }
 
   .about-servise {
     display: block;
+  }
+
+  .about-servise figure {
+    width: 80%;
+    margin: 3rem;
   }
 }
 
@@ -171,6 +182,17 @@
   .works-list-wrapper {
     display: block;
   }
+
+  .works-list-wrapper div {
+    width: 100%;
+    line-height: 2;
+  }
+
+  .works-btn {
+    font-size: 1.5rem;
+    padding: .5rem 2.5rem;
+    margin: 0 0 0 65%;
+  }
 }
 
 /* profile */
@@ -195,11 +217,24 @@
 
 @media screen and (max-width: 768px) {
   .profile-wrapper {
+    width: 80%;
     display: block;
     text-align: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
-  .profile-txt {
+  .profile-wrapper img {
+    margin-bottom: 3rem;
+  }
+
+  .profile-txt p {
+    letter-spacing: .15rem;
+    margin-bottom: 2rem;
+  }
+
+  .profile-txt p,
+  ul {
     text-align: left;
   }
 }
@@ -218,7 +253,7 @@
 
 /* contact */
 .contact-box {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -280,4 +315,10 @@
 .contact-btn.btn-center {
   display: block;
   margin: 10% auto 15% auto;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-btn.btn-center {
+    margin: 10% auto 10% auto;
+  }
 }
